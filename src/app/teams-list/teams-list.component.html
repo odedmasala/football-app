@@ -1,0 +1,16 @@
+<div class="teams" *ngIf="!isLoading">
+  <ul class="team-list" *ngIf="teams.length">
+    <li *ngFor="let team of teams">
+      <p>{{ team.strTeam }}</p>
+      <img class="team-logo" [src]="team.strTeamBadge" alt="" />
+    </li>
+  </ul>
+</div>
+<div class="loading" *ngIf="isLoading">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>

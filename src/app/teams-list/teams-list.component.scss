@@ -1,0 +1,41 @@
+@import "../../style_service.scss";
+
+.loading {
+  @include container;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  @include loading-animation;
+}
+.teams {
+  @include container(100%, row);
+  .team-list {
+    @include container;
+    flex-wrap: wrap;
+    gap: 40px;
+    li {
+      text-align: center;
+      padding: 10px;
+      font-family: $font-family;
+      font-size: x-large;
+      font-weight: bold;
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 2px;
+      border: 10px solid rgb(62, 104, 100);
+      border-radius: 40px;
+      box-shadow: 10px 7px 0px 0px #2c3736;
+      &:hover {
+        border: 10px solid rgb(24, 171, 156);
+        box-shadow: 12px 9px 0px 0px #08827a;
+      }
+      // align-items: ;
+      .team-logo {
+        width: 100%;
+        margin: 4px;
+      }
+    }
+  }
+}

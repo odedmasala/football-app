@@ -1,0 +1,20 @@
+@import "../../style_service.scss";
+.league-container {
+  @include container(100%, row, 0px);
+  justify-content: center;
+
+  .btn {
+    @include btn-click;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .btn-chose {
+    @include btn-click;
+    background-color: #4d604e;
+    border-bottom: 5px solid rgb(32, 36, 69);
+    &:hover {
+      cursor: unset;
+    }
+  }
+}
