@@ -1,9 +1,0 @@
-<div class="league-container" *ngIf="loadedLeague.length > 0">
-  <button
-    [class]="leagueMarker == league.strLeague ? 'btn-chose' : 'btn'"
-    *ngFor="let league of loadedLeague"
-    (click)="onSelectLeague(league.strLeague)"
-  >
-    {{ league.strLeague }}
-  </button>
-</div>
